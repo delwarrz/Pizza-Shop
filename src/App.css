@@ -7,11 +7,15 @@
   pointer-events: none;
 }
 
-.img-fluid {
+.product-thumb {
   width: 100px;
   height: 100px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+}
+
+.product-full-img {
   display: block;
 }
 
