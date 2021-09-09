@@ -45,6 +45,34 @@
   color: #61dafb;
 }
 
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.fa-plus {
+  color: white;
+}
+
+.fa-minus {
+  color: white;
+}
+
+.App > .container:first-of-type {
+  margin-top: 100px;;
+}
+
+.cart-info-item {
+  margin: 0px;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-info-item fa {
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
