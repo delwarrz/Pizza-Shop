@@ -35,7 +35,7 @@ function Pizza({ pizza }) {
                     <select value={size} onChange={(e) => setSize(e.target.value)} className="form-select">
                         {
                             pizza.varients.map(variant => {
-                                return <option value={variant}>{variant}</option>
+                                return <option key={variant} value={variant}>{variant}</option>
                             })
                         }
                     </select>
@@ -44,7 +44,7 @@ function Pizza({ pizza }) {
                     <p>Quantity</p>
                     <select value={quantity} onChange={(e) => setQuantity(e.target.value)} className="form-select">
                         {[...Array(10).keys()].map((element, index) => {
-                            return <option value={index + 1}>{index + 1}</option>
+                            return <option key={index} value={index + 1}>{index + 1}</option>
                         })
 
                         }

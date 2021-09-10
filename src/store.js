@@ -5,10 +5,12 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 import { getAllPizzaReducer } from "./reducers/PizzaReducers";
 import { CartReducer } from "./reducers/CartReducer";
+import { userRegisterReducer } from "./reducers/UserReducers";
 
 const finalReducer = combineReducers({
     getAllPizzaReducer: getAllPizzaReducer,
-    CartReducer: CartReducer
+    CartReducer: CartReducer,
+    userRegisterReducer: userRegisterReducer
 });
 
 const cartItems = localStorage.getItem('cartItems')?JSON.parse(localStorage.getItem('cartItems')):[];
