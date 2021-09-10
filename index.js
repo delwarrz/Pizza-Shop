@@ -5,8 +5,10 @@ const app = express();
 app.use(express.json());
 
 const pizzasRoute = require('./routes/PizzaRoute');
+const userroutes = require('./routes/userRoutes');
 
 app.use('/api/pizzas/', pizzasRoute);
+app.use('/api/users/', userroutes);
 
 app.get('/', (req, res) => {
     res.send("Backend Server is working!");
